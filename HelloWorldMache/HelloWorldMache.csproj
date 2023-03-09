@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F74D3262-7347-43D7-A660-DFC94AE2A2C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelloWorldMache</RootNamespace>
+    <AssemblyName>HelloWorldMache</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Demo\BepInEx\plugins\willis81808-Mache\Mache.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniverseLib.IL2CPP.Interop">
+      <HintPath>C:\Users\txipa\AppData\Roaming\Thunderstore Mod Manager\DataFolder\SonsOfTheForest\profiles\Testing\BepInEx\plugins\willis81808-Mache\UniverseLib.IL2CPP.Interop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HelloWorldMachePlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="drawable\Add_References.PNG" />
+    <Content Include="drawable\Browse_Browse.PNG" />
+    <Content Include="drawable\Browse_Import.PNG" />
+    <Content Include="drawable\Build_Solution.PNG" />
+    <Content Include="drawable\ggs.PNG" />
+    <Content Include="drawable\References.PNG" />
+    <Content Include="drawable\Rename_Class.PNG" />
+    <Content Include="drawable\Solution_Build_Successful.PNG" />
+    <Content Include="drawable\TMM_Downloaded_Mods.PNG" />
+    <Content Include="drawable\TMM_Import_Mod.PNG" />
+    <Content Include="drawable\TMM_Moche_Mod_Download.PNG" />
+    <Content Include="drawable\TMM_Profile.PNG" />
+    <Content Include="drawable\TMM_Save_Mod.PNG" />
+    <Content Include="drawable\TMM_Settings_Game.PNG" />
+    <Content Include="drawable\TMM_SOFT.PNG" />
+    <Content Include="drawable\TMM_Vanilla.PNG" />
+    <Content Include="drawable\Vanilla.PNG" />
+    <Content Include="drawable\VS_Create_Class_Library.PNG" />
+    <Content Include="drawable\VS_Create_New_Project.PNG" />
+    <Content Include="drawable\VS_Project_Information.PNG" />
+    <Content Include="drawable\WE_Mod_Files.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
